@@ -1,3 +1,4 @@
+library ieee;
 use ieee.std_logic_1164.all;
 
 entity FuncionesLogicas is
@@ -18,6 +19,6 @@ begin
 			      A or B when "01",
 					A xor B when "10",
 					not A when "11",
-					"----" when others;
+					"-----" when others;
 					
 end behavioural;

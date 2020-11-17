@@ -1,3 +1,4 @@
+library ieee;
 use ieee.std_logic_1164.all;
 
 entity Mux_1 is
@@ -10,17 +11,11 @@ end Mux_1;
 
 architecture behavioural of Mux_1 is
 
---signal entrada : std_logic_vector (4 downto 0);
 
 begin
 
-	s <= b when sel_b = '1' else
-		"00001" when sel_b = '0' else
-		"----";
-	--with sel_b select
-	--	s <=  
-	--	"00001" when '0',
-	--	b when '1',
-	--	"----" when others;
+	s <= b when sel_b = '0' else
+		"00001" when sel_b = '1' else
+		"-----";
 					
 end behavioural;
